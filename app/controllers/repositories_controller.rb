@@ -8,7 +8,7 @@ class RepositoriesController < ApplicationController
 
   def create
     # binding.pry
-    repo = Faraday.post("https://api.github.com/#{params[:user]}/repos") do |req|
+    repo = Faraday.post("https://api.github.com/users/#{params[:user]}/repos") do |req|
       req.body = {
         "authorization": session[:token],
         "name": params[:name],
