@@ -22,14 +22,15 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'rdoc', '~> 4.2', '>= 4.2.2'
 # Use Pry for testing
 gem 'pry'
 # Use Faraday for GET and POST
 gem 'faraday'
 # Dot-env
 gem 'dotenv-rails'
-
+gem 'omniauth', '~> 1.8', '>= 1.8.1'
+gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
 #Testing
 group :test do
   gem 'rspec-rails'
@@ -57,4 +58,3 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
